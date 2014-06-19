@@ -1,0 +1,88 @@
+<style>
+#galleria {height: 320px}
+</style>
+<!-- load Galleria -->
+
+<script src="{WB_URL}/modules/foldergallery/scripts/galleria/galleria-1.2.9.min.js"></script>
+
+
+
+<body>
+
+<div id="galleria">
+
+	<!-- BEGIN images -->
+
+	<!-- BEGIN invisiblePre -->
+
+  <a href="{ORIGINAL}">
+
+    <img src="{THUMB}"
+
+  			 data-big="{ORIGINAL}"
+
+  			 data-title="{CAPTION}" 
+
+  			 alt="{CAPTION}">
+
+  </a>
+
+	<!-- END invisiblePre -->
+
+	<!-- BEGIN thumbnails -->
+
+  <a href="{ORIGINAL}">
+
+    <img src="{THUMB}"
+
+  			 data-big="{ORIGINAL}"
+
+  			 data-title="{CAPTION}" 
+
+  			 alt="{CAPTION}">
+
+  </a>
+
+	<!-- END thumbnails -->
+
+	<!-- BEGIN invisiblePost -->
+
+	<a href="{ORIGINAL}">
+
+  <img src="{THUMB}"
+
+  			 data-big="{ORIGINAL}"
+
+  			 data-title="{CAPTION}" 
+
+  			 alt="{CAPTION}">
+
+  </a>
+
+	<!-- END invisiblePost -->
+
+	<!-- END images -->
+
+</div>
+
+
+
+<script>
+
+// Load the classic theme
+
+Galleria.loadTheme('{WB_URL}/modules/foldergallery/scripts/galleria/themes/classic/galleria.classic.min.js');
+
+
+
+// Initialize Galleria
+
+Galleria.run('#galleria');
+
+		
+
+Galleria.configure({lightbox: true})
+
+
+
+</script>
